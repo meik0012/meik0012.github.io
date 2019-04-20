@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<title>
+
+<head>
+  <title><b>QA for LIB2024<b/></title>
+</head>
+
+<body>
+
+<p>1)  What are the three components of Web? Answer A webbrowser (or client), a web application server, and a database server</p>
+
+<p> 2)  Define version control and give one example. Answer keeping a software system consisting of many versions and configurations well organized, eg SVN.</p>
+
+<p> 3)  What tag is used to create the title of a web page? Give an example. Answer<title><b>QA for LIB2024<b/></title> </p> 
+
+<p> 4)  What tag is used to create a paragraph in html? Give an example.Answer<p>
+<li> <p><b>Coming Soon:</b> <a href="https://fonts.google.com/specimen/Coming+Soon" title="https://fonts.google.com/specimen/Coming+Soon">https://fonts.google.com/specimen/Coming+Soon <a/></p></li></a> </p>
+
+<p> 5)  Identify the odd one from these tags: <span>, <p>, <a>, <i>  and state the reason? Answer<span/></p> 
+
+
+<p> 6)  What are the tags required to create a navigation list in HTML? Answer<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Clients</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav></p>
+
+<p>7)  What element is used to create images? Name its attributes. Answer<img> </p>
+
+<p>8)  Identify the odd one from these tags: <table>, <tr>, <b>, <td>  and state the reason Answer<td>  this tag is not used to make a table.</p>
+
+<p> 9)  Give an example of color picker input. Answer input type="color"</p>
+
+<p>10) What is the use of name and value attributes? Give two examples To give a more detailed command. Answer <table  border="1"> <form action="/action_page.php">
+  Name: <input type="text" name="fullname"><br>
+  Email: <input type="text" name="email"><br>
+  <input type="submit" value="Submit">
+</form></p> 
+
+<p> 11) Give an example of inline style. Answer <html> <head> <title>Playing with Inline Styles</title> </head> <body> <p style="color:blue;font-size:46px;"> I'm a big, blue, <strong>strong</strong> paragraph </p> </body> </html></p>
+
+<p>12) How would you link an external style sheet? Give example. Answer <head>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+</head> </p>
+
+<p> 13) Create CSS block to center an element both horizontally and vertically that has position:absolute and has width:200px and height:200px. Answer
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 200px solid green;
+  padding: 200px;
+}
+14) Create CSS keyframes block called "spin" that rotates an element.
+div {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 40000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 40000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 40000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}</p>
+
+
+<p>15) Create CSS animation block to rotate an element that has the following properties :
+• class "rotate-me"
+• It rotates 5 times at intervals of 0.5s with "linear" transition using animation keyframes "spin" 
+
+.image {
+    float: left;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -60px;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    @-ms-keyframes spin { 
+        from { 
+            -ms-transform: rotate(0deg); 
+        } to { 
+            -ms-transform: rotate(360deg); 
+        }
+    }
+    @-moz-keyframes spin { 
+        from { 
+            -moz-transform: rotate(0deg); 
+        } to { 
+            -moz-transform: rotate(360deg); 
+        }
+    }
+    @-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(360deg); 
+        }
+    }
+    @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+    }
+}</p>
+
+<p>16) How would you include create an alert with string "I love JavaScript" using JavaScript? 
+Answer alert("I love JavaScript");</p>
+
+<p>17) How would you fade out an element with id "fade-me" after a delay of 300ms using JQuery? Answer
+<!DOCTYPE html>
+<title>My Example</title>
+
+<style>
+  p {
+    background: gold;
+    padding: 20px;
+  }
+</style>
+
+<!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Use jQuery -->
+<script>
+// Wait for DOM to load and be ready
+$(document).ready(function(){
+  
+  // Listen for a click event
+  $( "p" ).click(function() {
+  
+    // Fade out the current element
+    $( this ).fadeOut();
+    
+  });});
+</script>
+
+<p>1. Fade out.</p>
+<p>2. fade out.</p>
+</p>
+
+<p>18) How would you select all elements with class "my-class" using Javascript and Jquery? Answer $(".classname").show(); </p>
+
+<p>19) Give an example of input field that takes phone number with format "123-456-7890"? Answer <input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+<span class="note">Format: 123-456-7890</span></p>
+
+</p>20)  Among HTML, CSS, Javascript, JQuery, what language did you like the best? State the reason. Answer I enjoyed learning about HTML  the most, because I understand this language the most out of all the others.</p>
+</body>
+
+<html/>
+
+
+
